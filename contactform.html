@@ -6,23 +6,17 @@
         </title>
         <link href="contactform.css" rel="stylesheet" type="text/css">
         <script src ="contactform.js"></script>
-        <style>
-            button{background-color: plum; padding: 15px 28px;  font-size: 16px; color: white;}
-            body {background-color:plum ;}
-			
-
-        </style>
     </head>
     <body>
         <div>
-            <h2 style="color:white">Contact Form</h2>
-            <p style="color:white">Please fill in your information and we'll be sending your order in no time</p><br><br><br>
+            <h2>Contact Form</h2>
+            <p>Please fill in your information and we'll be sending your order in no time</p><br><br><br>
             <form>
                 <label>Your Name</label>
-                <input id="fname" type="text" name="fname" placeholder="First Name">
-                <input id="lname" type="text" name="lname" placeholder="Last Name"><br><br>
+                <input id="fname" type="text" name="fname" placeholder="First Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                <input id="lname" type="text" name="lname" placeholder="Last Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"><br><br>
                 <label>Your Email</label>
-                <input id="email" type="email" name="email" placeholder="e.g.hello@contact.net"><br><br>
+                <input id="email" type="email" name="email"  placeholder="e.g.hello@contact.net"><br><br>
                 <label>Phone*</label>
                 <input id="phone" type="text" name="phone" placeholder="###" maxlength="10" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"><br><br>
                 <label>Message Subject*</label>
@@ -33,18 +27,8 @@
                 </select><br><br>
                 <label>Message*</label>
                 <input id="message" style="height:100px" size="50"  type="text"><br><br>
-                <button  onclick="myFunction()" type="button">Submit Form</button>
+                <button onclick="myFunction()" type="button">Submit Form</button>
             </form>
         </div>		
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
