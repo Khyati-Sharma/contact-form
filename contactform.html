@@ -17,15 +17,15 @@
                 <input id="lname" type="text" name="lname" placeholder="Last Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"><br><br>
                 <label>Your Email</label>
                 <input id="email" type="email" name="email"  placeholder="e.g.hello@contact.net"><br><br>
-                <label>Phone*</label>
+                <label>Phone number</label>
                 <input id="phone" type="text" name="phone" placeholder="###" maxlength="10" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"><br><br>
-                <label>Message Subject*</label>
+                <label>Message Subject</label>
                 <select id="subject">
                     <option value="Others">Others</option>
                     <option value="Email issue">Email issue</option>
                     <option value="Technical issue">Technical issue</option>
                 </select><br><br>
-                <label>Message*</label>
+                <label>Message</label>
                 <input id="message" style="height:100px" size="50"  type="text"><br><br>
                 <button onclick="myFunction()" type="button">Submit Form</button>
             </form>
